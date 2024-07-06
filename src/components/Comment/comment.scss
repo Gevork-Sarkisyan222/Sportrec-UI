@@ -1,0 +1,74 @@
+.comment {
+  position: relative;
+  padding: 9px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Измените это значение, чтобы изменить позицию границы */
+    left: 0;
+    right: 0;
+    border-top: 1px solid #eef0f7;
+  }
+
+  &.answer-comment {
+    border: none;
+    margin-left: 40px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .user {
+    display: flex;
+
+    .name {
+      color: #7b7ea5;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .text-wrapper {
+      max-width: 600px;
+
+      .text {
+        font-weight: 548;
+        color: black;
+      }
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      margin-right: 12px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        object-fit: cover;
+      }
+    }
+
+    .ansewer {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+
+      span {
+        color: #9395b8;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      h3 {
+        font-weight: 548;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.menu-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #ffff;
+  text-align: center;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+
+  .top-section {
+    .logo {
+      margin-top: 45px;
+
+      img {
+        width: 160px;
+      }
+    }
+
+    .close-icon {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+  }
+
+  .links {
+    margin-bottom: 24px;
+    margin-top: 55px;
+    margin-left: -15px;
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 40px;
+
+      font-size: 14px;
+      font-weight: 548;
+      cursor: pointer;
+      transition: 200ms all ease-in-out;
+
+      &:hover {
+        svg {
+          path {
+            stroke: black;
+          }
+        }
+
+        span {
+          color: black;
+        }
+      }
+
+      &:first-child {
+        color: black;
+      }
+      color: #9395b8;
+    }
+  }
+
+  .language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .lang-item {
+      display: flex;
+      gap: 6px;
+    }
+
+    .arrow-icon {
+      margin-right: 30px;
+    }
+  }
+
+  .languages-area {
+    padding-left: 25px;
+    margin-bottom: 20px;
+  }
+
+  .lang-selector {
+    padding-left: 25px;
+    opacity: 0;
+    transition: 100ms all ease-in-out;
+
+    &.open {
+      opacity: 1;
+    }
+
+    .language-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-direction: column;
+      margin-left: -8px;
+
+      .lang-item {
+        display: flex;
+        gap: 6px;
+        padding: 12px 8px 12px 8px;
+        width: 90%;
+        border-radius: 10px;
+
+        &:hover {
+          background: #eef0f7;
+        }
+      }
+
+      .arrow-icon {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -75px;
+    position: relative;
+    z-index: 2;
+
+    .reg {
+      width: 90%;
+      height: 40px;
+      border-radius: 10px;
+      padding: 10px 24px 10px 24px;
+      background: #06082c;
+      border: none;
+      transition: 200ms all ease-in-out;
+      color: #ffff;
+      cursor: pointer;
+      font-weight: 548;
+
+      &:hover {
+        background: #0d104c;
+      }
+    }
+
+    .log {
+      width: 90%;
+      height: 40px;
+      border-radius: 10px;
+      padding: 10px 24px 10px 24px;
+      background: #eef0f7;
+      border: none;
+      transition: 200ms all ease-in-out;
+      color: #ffff;
+      cursor: pointer;
+      font-weight: 548;
+      color: black;
+    }
+  }
+}

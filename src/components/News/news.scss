@@ -1,0 +1,54 @@
+.news-container {
+  position: relative;
+  width: 1240px;
+  height: 320px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 25px;
+  cursor: pointer;
+
+  @media (max-width: 1270px) {
+    width: 83vw;
+    margin: 25px auto;
+  }
+
+  @media (max-width: 600px) {
+    width: 86vw;
+    margin: 25px auto;
+  }
+
+  .close-icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.toggle-dots {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  gap: 3px;
+
+  @media (max-width: 1270px) {
+    margin-bottom: 20px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+    background: #cccfda;
+    border-radius: 100%;
+    cursor: pointer;
+
+    &.activeDot {
+      background: #353754;
+    }
+  }
+}

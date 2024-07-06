@@ -1,0 +1,128 @@
+.subscribers-wrapper {
+  width: 370px;
+  height: 460px;
+  border-radius: 20px;
+  background: #ffffff;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 24px 20px 24px 20px;
+  margin-bottom: 25px;
+
+  @media (max-width: 1310px) {
+    width: 350px;
+  }
+
+  @media (max-width: 1270px) {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .users-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      .avatar {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+
+        .badge {
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          right: -5px;
+          top: 25px;
+          bottom: 0;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 100px;
+        }
+      }
+
+      .user-info {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .texts {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+
+          span {
+            font-weight: 548;
+            font-size: 14px;
+          }
+        }
+
+        .info {
+          margin-top: -8px;
+
+          p {
+            font-size: 12px;
+            font-weight: 400;
+            width: 210px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            @media (max-width: 1270px) {
+              width: 180px;
+            }
+          }
+        }
+      }
+
+      button {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding: 10px 17px 10px 17px;
+      }
+    }
+  }
+
+  .look-all-btn {
+    width: 100%;
+    height: 40px;
+    padding: 10px 24px 10px 24px;
+    border-radius: 10px;
+    background-color: #eef0f7;
+    border: none;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: #bdbdbd;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.Post {
+  width: 765px;
+  height: 1110px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 20px;
+  margin-bottom: 20px;
+
+  @media (max-width: 1270px) {
+    width: 50vw;
+    height: auto;
+  }
+
+  @media (max-width: 1270px) {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .top-content {
+    .type-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #9395b8;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      line-height: 26px;
+    }
+
+    .desc {
+      color: #7b7ea5;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+
+      @media (max-width: 1270px) {
+        margin-bottom: 42px;
+      }
+    }
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+
+    .post-images {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      cursor: pointer;
+
+      // @media (max-width: 1270px) {
+      //   justify-content: space-between;
+      // }
+
+      @media (max-width: 600px) {
+        justify-content: space-around;
+      }
+
+      .postImage {
+        width: 235px;
+        height: 200px;
+        border-radius: 14px;
+        overflow: hidden;
+        transition: 200ms all ease-in-out;
+
+        @media (max-width: 1270px) {
+          width: 200px;
+          height: 200px;
+        }
+
+        @media (max-width: 777px) {
+          width: 25vw;
+          height: 25vw;
+        }
+
+        @media (max-width: 400px) {
+          width: 21vw;
+          height: 21vw;
+        }
+
+        &:hover {
+          scale: 0.9;
+        }
+
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .action-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 16px;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      span {
+        color: #7b7ea5;
+      }
+    }
+  }
+
+  .comment-section {
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+    // .answer-comment {
+    //   margin-left: 40px;
+    // }
+  }
+
+  .see-btn {
+    width: 232px;
+    height: 40px;
+    padding: 10px 24px 10px 24px;
+    border-radius: 10px;
+    background-color: #eef0f7;
+    border: none;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 200ms all ease-in-out;
+    margin-left: 10px;
+
+    @media (max-width: 1270px) {
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: #bdbdbd;
+    }
+  }
+}

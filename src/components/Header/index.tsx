@@ -24,7 +24,11 @@ const Header: React.FC = () => {
   };
 
   const handleOpenLanguage = () => {
-    setOpenLanguage(true);
+    setOpenLanguage(!openLanguage);
+  };
+
+  const handleCloseLanguage = () => {
+    setOpenLanguage(false);
   };
 
   const handleOpenMenu = () => {
@@ -165,15 +169,15 @@ const Header: React.FC = () => {
                 <img src={userIcon} alt="user icon" />
               </div>
               <div className={`language-selector ${openLanguage ? 'opended' : ''}`}>
-                <div className="language-select">
+                <div onClick={handleCloseLanguage} className="language-select">
                   <img src={languageIcon} alt="language icon" />
                   <span>RU</span>
                 </div>
-                <div className="language-select">
+                <div onClick={handleCloseLanguage} className="language-select">
                   <img src={englishIcon} alt="language icon" />
                   <span>EN</span>
                 </div>
-                <div className="language-select">
+                <div onClick={handleCloseLanguage} className="language-select">
                   <img src={franceIcon} alt="language icon" />
                   <span>FR</span>
                 </div>
